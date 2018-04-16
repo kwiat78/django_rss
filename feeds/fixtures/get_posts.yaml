@@ -1,0 +1,45 @@
+- model: feeds.link
+  pk: 1
+  fields:
+    url: "http://test.com/rss/feed.xml"
+
+- model: feeds.link
+  pk: 2
+  fields:
+    url: "http://test.com/rss/feed2.xml"
+
+- model: feeds.feedlink
+  pk: 1
+  fields:
+    link: 1
+    feed: 3
+    position: 0
+    reg_exp: ""
+
+- model: feeds.feedlink
+  pk: 2
+  fields:
+    link: 2
+    feed: 5
+    position: 0
+    reg_exp: ""
+
+- model: feeds.feedlink
+  pk: 3
+  fields:
+    link: 1
+    feed: 4
+    position: 0
+    reg_exp: "Post.*"
+
+- model: feeds.post
+  pk: 1
+  fields:
+    feed: 5
+    title: "Post3"
+    url: "http://news/item3.html"
+    post_date: "2018-01-25T20:02:00Z"
+    add_date: "2018-01-25T20:10:00Z"
+    view: True
+    seen: True
+    mentioned: True

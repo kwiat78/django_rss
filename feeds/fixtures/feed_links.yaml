@@ -1,0 +1,35 @@
+- model: feeds.link
+  pk: 1
+  fields:
+    url: "http://test.xml"
+
+- model: feeds.link
+  pk: 2
+  fields:
+    url: "http://test2.xml"
+
+- model: feeds.link
+  pk: 3
+  fields:
+    url: "http://test3.xml"
+
+- model: feeds.feedlink
+  pk: 1
+  fields:
+    link: 1
+    feed: 1
+    position: 0
+
+- model: feeds.feedlink
+  pk: 2
+  fields:
+    link: 2
+    feed: 1
+    position: 1
+
+- model: feeds.feedlink
+  pk: 3
+  fields:
+    link: 3
+    feed: 1
+    position: 2

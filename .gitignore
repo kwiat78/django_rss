@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+.eggs/
+
+*.egg
+/django_feeds.egg-info/
+# Unit test / coverage reports
+htmlcov/
+.coverage
+
+# IDE
+.idea/

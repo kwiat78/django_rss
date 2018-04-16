@@ -1,0 +1,57 @@
+- model: auth.user
+  pk: 1
+  fields:
+    username: user1
+    password: pbkdf2_sha256$20000$Hs5GcWintOd6$fE+HysPBjjZ5e1/ql3Uy5lliKHY7PEmIJBN0GlMcaak=
+
+- model: auth.user
+  pk: 2
+  fields:
+    username: user2
+    password: pbkdf2_sha256$20000$Hs5GcWintOd6$fE+HysPBjjZ5e1/ql3Uy5lliKHY7PEmIJBN0GlMcaak=
+
+- model: auth.user
+  pk: 3
+  fields:
+    username: user3
+    password: pbkdf2_sha256$20000$Hs5GcWintOd6$fE+HysPBjjZ5e1/ql3Uy5lliKHY7PEmIJBN0GlMcaak=
+
+- model: feeds.feed
+  pk: 1
+  fields:
+    name: Feed1
+    user: [user1]
+    postLimit: 10
+    position: 0
+
+- model: feeds.feed
+  pk: 2
+  fields:
+    name: Feed2
+    user: [user1]
+    postLimit: 10
+    position: 1
+
+- model: feeds.feed
+  pk: 3
+  fields:
+    name: Feed1
+    user: [user2]
+    postLimit: 2
+    position: 0
+
+- model: feeds.feed
+  pk: 4
+  fields:
+    name: Feed1
+    user: [user3]
+    postLimit: 2
+    position: 0
+
+- model: feeds.feed
+  pk: 5
+  fields:
+    name: Feed2
+    user: [user3]
+    postLimit: 2
+    position: 1

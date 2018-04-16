@@ -1,0 +1,35 @@
+- model: feeds.post
+  pk: 1
+  fields:
+    feed: 1
+    title: "Post1"
+    url: "http://news/item1.html"
+    post_date: "2018-01-25T20:00:00Z"
+    add_date: "2018-01-25T20:05:00Z"
+    view: False
+    seen: False
+    mentioned: False
+
+- model: feeds.post
+  pk: 2
+  fields:
+    feed: 1
+    title: "Post2"
+    url: "http://news/item2.html"
+    post_date: "2018-01-25T20:01:00Z"
+    add_date: "2018-01-25T20:05:00Z"
+    view: False
+    seen: True
+    mentioned: True
+
+- model: feeds.post
+  pk: 3
+  fields:
+    feed: 1
+    title: "Post3"
+    url: "http://news/item3.html"
+    post_date: "2018-01-25T20:02:00Z"
+    add_date: "2018-01-25T20:10:00Z"
+    view: True
+    seen: True
+    mentioned: True
