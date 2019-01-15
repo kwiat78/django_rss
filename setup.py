@@ -9,13 +9,13 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django_feeds',
-    version='0.2.0',
+    version='0.2.1',
     packages=find_packages(),
     install_requires=[
         "beautifulsoup4==4.4.1",
-        "Django==1.8.6",
+        "Django==1.11.18",
         "iso8601==0.1.11",
-        "urllib3==1.22",
+        "urllib3==1.23",
         "lxml==4.1.1",
         "djangorestframework==3.6.2",
         "django-filter==1.0.1",
@@ -23,7 +23,7 @@ setup(
     tests_require=[
         "freezegun==0.3.9",
         "pytz==2015.7",
-        "PyYAML==3.12",
+        "PyYAML==4.2b1",
     ],
     test_suite="runtests",
     include_package_data=True,
