@@ -36,12 +36,19 @@ class LinkSerializer(serializers.ModelSerializer):
         return item
 
 
+class PostSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Post
+        fields = '__all__'
+
 class FeedSerializer(serializers.ModelSerializer):
     links = FeedLinkSerializer(many=True, read_only=True)
     count = serializers.SerializerMethodField()
     position = serializers.IntegerField(read_only=True)
     user = serializers.HiddenField(default=serializers.CurrentUserDefault())
     favIcon = serializers.CharField(default='undefined', required=False)
+    post_set = PostSerializer(many=True)
 
     class Meta:
         model = Feed
@@ -65,9 +72,3 @@ class FeedSerializer(serializers.ModelSerializer):
     def get_count(self, obj):
         return len(Post.objects.filter(feed=obj, view=False))
 
-
-class PostSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Post
-        fields = '__all__'
