@@ -15,7 +15,7 @@ setup(
         "beautifulsoup4==4.4.1",
         "Django==1.11.29",
         "iso8601==0.1.11",
-        "urllib3==1.23",
+        "urllib3==1.24.2",
         "lxml==4.1.1",
         "djangorestframework==3.6.2",
         "django-filter==1.0.2",
