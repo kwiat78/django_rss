@@ -18,7 +18,6 @@ class CreatableSlugRelatedField(serializers.SlugRelatedField):
 class FeedLinkSerializer(serializers.ModelSerializer):
 
     link = CreatableSlugRelatedField(queryset=Link.objects, slug_field="url")
-    feed = serializers.PrimaryKeyRelatedField(queryset=Feed.objects)
 
     class Meta:
         model = FeedLink
