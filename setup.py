@@ -9,11 +9,11 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django_feeds',
-    version='0.2.2',
+    version='0.2.3',
     packages=find_packages(),
     install_requires=[
         "beautifulsoup4==4.4.1",
-        "Django==1.11.18",
+        "Django==1.11.29",
         "iso8601==0.1.11",
         "urllib3==1.23",
         "lxml==4.1.1",
