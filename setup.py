@@ -23,7 +23,7 @@ setup(
     tests_require=[
         "freezegun==0.3.9",
         "pytz==2015.7",
-        "PyYAML==4.2b1",
+        "PyYAML==5.4",
     ],
     test_suite="runtests",
     include_package_data=True,
