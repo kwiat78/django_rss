@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "beautifulsoup4==4.4.1",
-        "Django==1.11.29",
+        "Django==2.2.24",
         "iso8601==0.1.11",
         "urllib3==1.24.2",
         "lxml==4.1.1",
